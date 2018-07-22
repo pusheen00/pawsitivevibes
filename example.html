@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Paw-sit </title>
+<link rel="icon" href = "http://icons.iconarchive.com/icons/sonya/swarm/256/Cat-icon.png" type = "image/gif">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+  </div>
+
+  <div id= "asdfg">
+    <h2 class = "camden"> Paw-sitivity ! </h2>
+    <p class = "grav"> [through|compliments] </p>
+  </div>
+
+  <div class= "img">
+    <img src="background.png" style = "width: 100%">
+  </div>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="example.html"> Paw-sitive Vibes  </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="catpics.html">Cat Pictures</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="#" id="one"></a>
+  <a href="#" id="two"></a>
+  <a href="#" id="three"></a>
+  <a href="#" id="four"></a>
+  <a href="#" id="five"></a>
+  <a href="#" id="six"></a>
+
+  </div>
+
+  <!-- Trigger the modal with a button -->
+    <button type="button" id= "plus"class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" id="compliment">Leave a Compliment</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form>
+                <div class="form-group">
+                  <label for="comment" id="specialLabel" value = "value">Comment:</label>
+                  <textarea class="form-control" rows="5" type ="text" for="comment" id="specialID" value = "value"></textarea>
+                </div>
+              </form>
+              <button id="frm1" onclick= "Function()" > Try it </button>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+
+</body>
+
+<script>
+function Function(){
+  var nameValue = document.getElementById("specialID").value;
+  var chatbox = document.createElement('div');
+  chatbox.innerHTML = nameValue;
+  chatbox.className = "cool_chat_box"
+  document.getElementById("container").appendChild(chatbox);
+
+  //document.getElementById('cool_chat_box').innerHTML+= nameValue + "<br>" + "<br>" +"<br>" +"<br>" +"<br>";
+}
+
+</script>
+</html>
